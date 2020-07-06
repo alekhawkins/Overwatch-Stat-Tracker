@@ -17,10 +17,10 @@ export default class OwProfile extends React.Component{
     };
 
     async componentDidMount() {
-        const url = "http://owapi.io/profile/pc/us/JesusMurphy-11665";
-        const response = await fetch(url);
-        const data = await response.json();
-        this.setState({profile: data, loading: false})
+        const url = "http://owapi.io/profile/pc/us/JesusMurphy-11665"; // setting url to api endpoint
+        const response = await fetch(url); // setting response to url getting fetched
+        const data = await response.json(); // data is equal to the reponse of the fetch in json
+        this.setState({profile: data, loading: false}) // setting state to profile: data
         console.log(data);
     }
 
@@ -31,7 +31,7 @@ export default class OwProfile extends React.Component{
                     <div>loading...</div> 
                     ) : (
                         <div className="all">
-                        <img src={overwatch}/>
+                        <img src={overwatch} alt=""/>
                         <h1 className="battleTag">JesusMurphy#11665</h1>
                         <div className="container">
                             <div className="row">
