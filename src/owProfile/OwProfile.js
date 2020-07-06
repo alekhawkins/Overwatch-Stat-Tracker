@@ -79,12 +79,6 @@ export default class OwProfile extends React.Component{
                             </div>
                         </div>
                     </div>
-                            /* <div className="sr">{this.state.profile.damage.rank}</div>
-                            // <img className="rankImg" src={this.state.profile.damage.rank_img} alt=''/>
-                            // <div className="sr">{this.state.profile.tank.rank}</div>
-                            // <img className="rankImg" src={this.state.profile.tank.rank_img} alt=''/>
-                            // <div className="sr">{this.state.profile.support.rank}</div>
-                            // <img className="rankImg" src={this.state.profile.support.rank_img} alt=''/> */
                 )}
         </div>
         );
