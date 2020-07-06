@@ -17,7 +17,7 @@ export default class OwProfile extends React.Component{
     };
 
     async componentDidMount() {
-        const url = "http://owapi.io/profile/pc/us/JesusMurphy-11665"; // setting url to api endpoint
+        const url = "https://owapi.io/profile/pc/us/JesusMurphy-11665"; // setting url to api endpoint
         const response = await fetch(url); // setting response to url getting fetched
         const data = await response.json(); // data is equal to the reponse of the fetch in json
         this.setState({profile: data, loading: false}) // setting state to profile: data
